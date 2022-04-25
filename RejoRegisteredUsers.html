@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Account</title>
+	     <link rel="stylesheet" href="fregis.css">
+	     <style type="text/css">
+		body{background: url("rejobus.jpg"); background-repeat: no-repeat; background-size: 3000px;}
+		input[type=number]
+		{
+			width: 400px;
+			height: 40px;
+			font-size: 35px;
+			font-family: agency fb;
+			font-weight: bold;
+			color: darkslategray;			
+		}
+		input[type=text]
+		{
+			width: 400px;
+			height: 40px;
+			font-size: 15px;
+			font-family: verdana;
+			font-weight: bold;
+			color: darkslategray;
+		}
+		input[type=submit]
+		{
+			font-size: 20px;
+			font-family: verdana;
+			font-weight: bold;
+			color: green;
+		}
+		fieldset
+		{
+			width: 900px;
+			margin-top: 40px;
+			margin-right: 30px;			
+			border-radius: 10px;
+			margin-left: 100px;
+			background-color: lightseagreen;
+		}
+		legend
+		{
+			text-align: center;
+			font-size: 25px;
+			color: red;
+			font-weight: bold;
+			font-family: verdana;
+		}
+		#a{color: darkgreen; font-family: verdana; font-weight: bold; font-size: 40px;}
+		p{color: darkgreen; font-family: sans-serif; font-weight: bold; font-size: 25px;}
+	</style>
+
+</head>
+<body style="background-color: silver;">
+	<div class="full-page">
+        <div class="navbar">
+            <div>
+                <img src="rejogrouplogo.jpg" width="100px" height="100px">
+                <img src="HelloC.jpg" width="100px" height="100px">
+                <img src="abbudhabibus.jpg" width="100px" height="100px">
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                                        <li>
+                        <a href="RejoTravelHomePage.html">Home Page</a></li>
+                        <li><a href="RejoTravelRegisterPage.html">Book Your Ticket</a>
+                    </li>
+                    <li><a href="RejoTravelReportPage.php">Report</a>
+                    </li>
+                    <li>
+                    <a href="RejoRegisteredUsers.html">Create Account</a></li>
+                    <li><a href="rejoaboutus.html">More</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+	<h1 style="font-size: 10 px; color: black; font-weight: inherit; text-indent: justify;">With RejoTravels, you can now create account and become a registered user of this service.<br>Having an account with RejoTravels will help you gain discounts on travels, promotions and special prizes. Be the first to gain access to our never ending new features. Submit the form below to register as a Rejo User.</h1>
+    <fieldset><legend>
+	<h2 style="color: black;font-family:times new roman;text-align: center; "><marquee>Sign Up with RejoTravels</marquee></h2></legend>
+	<form action="RejoRegisteredUsers.php" method="POST">
+   	First Name:<input type="text" placeholder="Enter your first name" name="fname"><br>
+	Last Name:<input type="text" placeholder="Enter your last name" name="lname"><br>
+    Preferred Username:<input type="text" name="username"><br>
+	Email: <input type="email" name="email"><br>
+    Age: <input type="text" name="age"><br><br>
+    Upload your original NID: <input type="file" name="NID"><br><br>
+
+    Gender:<br>
+	<input type="radio" name="Gender" value="Male">Male
+	 <input type="radio" name="Gender" value="Female">Female
+	 <input type="radio" name="Gender" value="Other">other<br><br>
+    Home Province:
+	<select>
+		<option value="province">Northern</option>
+		<option value="province">Southern</option>
+		<option value="province">Western</option>
+		<option value="province">Eastern</option>
+		<option value="province">Kigali city</option>
+	</select><br><br>
+    Select 2 provinces that you most often travel to:<br>
+	<input type="checkbox" name="tprovince" value="Northern">North<br>
+	<input type="checkbox" name="tprovince" value="Southern">South<br>
+	<input type="checkbox" name="tprovince" value="Western">West<br>
+	<input type="checkbox" name="tprovince" value="Eastern">East<br>
+	<input type="checkbox" name="tprovince" value="Kigali">Kigali<br>
+   <br><br>
+	Tell us anything<textarea name="Comment">Tell us a secret</textarea><br><br>
+		<input type="Submit" value="register" style="margin-left :70px; margin-bottom: 40px;">
+	</form>
+</fieldset>
+<br><br>
+Powered by RejoGroup      @2022 all rights reserved
+
+</body>
+</html>

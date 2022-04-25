@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rejo Travel Registration</title>
+	    <link rel="stylesheet" href="fregis.css">
+		<style type="text/css">
+		body{background: url("rejoimage.jpg"); background-repeat: no-repeat; background-size: 3000px;}
+		input[type=number]
+		{
+			width: 400px;
+			height: 40px;
+			font-size: 35px;
+			font-family: agency fb;
+			font-weight: bold;
+			color: darkslategray;			
+		}
+		input[type=text]
+		{
+			width: 400px;
+			height: 40px;
+			font-size: 15px;
+			font-family: verdana;
+			font-weight: bold;
+			color: darkslategray;
+		}
+		input[type=submit]
+		{
+			font-size: 20px;
+			font-family: verdana;
+			font-weight: bold;
+			color: green;
+		}
+		fieldset
+		{
+			width: 900px;
+			margin-top: 80px;
+			margin-right: 30px;			
+			border-radius: 10px;
+			margin-left: 100px;
+			background-color: lightskyblue;
+		}
+		legend
+		{
+			text-align: center;
+			font-size: 25px;
+			color: red;
+			font-weight: bold;
+			font-family: verdana;
+		}
+		#a{color: darkgreen; font-family: verdana; font-weight: bold; font-size: 40px;}
+		p{color: darkgreen; font-family: sans-serif; font-weight: bold; font-size: 25px;}
+	</style>
+</head>
+<body>
+	 <div class="full-page">
+        <div class="navbar">
+            <div>
+                <img src="rejogrouplogo.jpg" width="100px" height="100px">
+                <img src="registration.jpg" width="100px" height="100px">
+                <img src="abbudhabibus.jpg" width="100px" height="100px">
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                     <li><a href="RejoTravelHomePage.html">Home Page</a></li>
+                     <li><a href="RejoTravelRegisterPage.html">Book Your Ticket</a></li>
+                     <li><a href="RejoTravelReportPage.php">Report</a></li>
+                     <li><a href="RejoRegisteredUsers.html">Create Account</a></li>
+                     <li><a href="rejoaboutus.html">More</a></li>
+
+                </ul>
+            </nav>
+        </div>
+			
+			<p id="a" style="color: white;"><marquee>Welcome to our online registration, <br>kindly fill out the form below</marquee>
+	
+	<fieldset>
+		<legend>Hi, Welcome to RejoTravel<br>Book your ticket:</legend>
+			<form action="RejoTravelRegisterPage.php" method="post">
+				<h1 style="font-weight:inherit;">Full ID Names:</h1><input type="text" name="Full_Names" placeholder="Enter your full names they on your ID" required=""><br>
+				<h1 style="font-weight:inherit">Initial Location:</h1><input type="text" name="Initial_Location" placeholder="Where are you going to start you travel from?" required=""><br>
+
+				  <h1 style="font-weight:inherit">Select your destination</h1><h3>choose from the list:</h3>
+
+                <select name="Destinations" required=""><br>
+				<option value="choose your destination">Choose your destination</option>
+				<option value="Mutara">Mutara</option>
+				<option value="Musanze">Musanze</option>
+				<option value="Cyangugu">Cyangugu</option>
+				<option value="Rusumo">Rusumo</option>
+				<option value="Kibuye">Kibuye</option>
+				<option value="Rusumo">Rusumo</option>
+				<option value="Butare">Butare</option>
+				<option value="Byumba">Byumba</option>
+				<option value="Gisenyi">Gisenyi</option></select>
+                       <br>
+                       <h1 style="font-weight:inherit">Mode of Payment</h1><h3>choose from the list:</h3>
+                <select name="Payment_mode" required><br>
+                <option value="Payment_mode">choose the payment mode</option>
+				<option value="Mobile Money">Mobile Money</option>
+				<option value="Airtel Tigo">Airtel Tigo</option>
+				<option value="Debit Card">Debit Card</option>
+				<option value="Other">Other/Please specify</option>
+			</select><br>   
+			 <h1 style="font-weight:inherit">Active Phone Number:</h1>
+			    <input type="text" name="Phone_number" placeholder="Enter your phone number" required><br>  
+		   <h1 style="font-weight:inherit">What do you want us to note about your travel?</h1>
+		   <input type="text" name="Additional_Notes" placeholder="Make it funny and tell us what comforts you!" required=""><br>
+            
+                 <h3>Click on "register" to submit the form, your travel case will be forwarded<br>to the customers' departement<h3>
+				<input type="submit" value="Register">
+			</form>
+	</fieldset>
+	<h1><a style='text-decoration: underline; color: red;' href='#'>Back to Top</a><h1>
+</body>
+</html>
